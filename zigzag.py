@@ -16,7 +16,7 @@ def zigzag(list):
         
         if end == storage[-1][-1]:
             for i in range(len(storage)):
-                if storage[i][0]>storage[i][1]<storage[i][2]:
+                if storage[i][0]>storage[i][1]<storage[i][2] or storage[i][0]<storage[i][1]>storage[i][2]:
                     bools.append(True)
                 else:
                     bools.append(False)
